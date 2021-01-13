@@ -7,32 +7,39 @@ body {
   display: flex;
   color: #ff79c6;
 }
+
 h1,
 h2 {
   color: white;
 }
+
 #dnaImage {
   background-image: url("../theme/DNA.png");
   width: 40vw;
   height: 100vh;
   background-repeat: no-repeat;
 }
+
 main {
   text-align: center;
   width: 60vw;
 }
+
 #searchIcon {
   margin-left: -10px;
 }
+
 .Atributions {
   bottom: 0;
   position: absolute;
   display: flex;
   text-align: center;
 }
+
 .search {
   display: inline;
 }
+
 input {
   border: none;
   border-radius: 20px;
@@ -51,6 +58,7 @@ input {
   -webkit-tap-highlight-color: transparent;
 }
 
+/*Add animation for input:*/
 .label-float {
   position: absolute;
   padding-top: 13px;
@@ -100,12 +108,15 @@ input {
 .label-float input:required:invalid + label {
   color: red;
 }
+
 .label-float input:focus:required:invalid {
   border: 2px solid red;
 }
+
 .label-float input:required:invalid + label:before {
   content: "*";
 }
+
 .label-float input:focus + label,
 .label-float input:not(:placeholder-shown) + label {
   font-size: 13px;
