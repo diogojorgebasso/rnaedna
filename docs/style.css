@@ -11,6 +11,20 @@ body {
 h1,
 h2 {
   color: white;
+  font-weight: 500;
+}
+
+#searchIcon {
+  z-index: 1;
+  padding-left: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
 }
 
 #dnaImage {
@@ -25,8 +39,8 @@ main {
   width: 60vw;
 }
 
-#searchIcon {
-  margin-left: -10px;
+svg {
+  fill: #ff79c6;
 }
 
 .Atributions {
@@ -37,20 +51,19 @@ main {
 }
 
 .search {
-  display: inline;
+  display: flex;
+  align-items: center;
 }
 
 input {
   border: none;
   border-radius: 20px;
-  width: 15em;
   cursor: text;
   text-rendering: auto;
   text-indent: 0px;
   text-shadow: none;
   text-rendering: auto;
   appearance: textfield;
-  line-height: 34px;
   outline: none;
   letter-spacing: normal;
   word-spacing: normal;
@@ -58,8 +71,10 @@ input {
   -webkit-tap-highlight-color: transparent;
 }
 
-/*Add animation for input:*/
+/* ==> Add animation for input:*/
+
 .label-float {
+  z-index: 0;
   position: absolute;
   padding-top: 13px;
 }
