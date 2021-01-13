@@ -1,6 +1,7 @@
-html, body{
+html,
+body {
   padding: 0;
-  overflow: hidden;
   margin: 0;
-  display: flexbox;
+  background-color: #282a36;
+  font-family: "Roboto", sans-serif;
 }
