@@ -4,4 +4,30 @@ body {
   margin: 0;
   background-color: #282a36;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  color: #ff79c6;
+}
+h1,
+h2 {
+  color: white;
+}
+#dnaImage {
+  background-image: url("../theme/DNA.png");
+  width: 40vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+main {
+  text-align: center;
+  width: 60vw;
+}
+.Atributions {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  text-align: center;
+}
+input {
+  border: none;
+  border-radius: 4%;
 }
