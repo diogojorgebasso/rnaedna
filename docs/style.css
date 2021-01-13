@@ -21,13 +21,94 @@ main {
   text-align: center;
   width: 60vw;
 }
+#searchIcon {
+  margin-left: -10px;
+}
 .Atributions {
   bottom: 0;
   position: absolute;
   display: flex;
   text-align: center;
 }
+.search {
+  display: inline;
+}
 input {
   border: none;
-  border-radius: 4%;
+  border-radius: 20px;
+  width: 15em;
+  cursor: text;
+  text-rendering: auto;
+  text-indent: 0px;
+  text-shadow: none;
+  text-rendering: auto;
+  appearance: textfield;
+  line-height: 34px;
+  outline: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.label-float {
+  position: absolute;
+  padding-top: 13px;
+}
+.label-float input {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -webkit-appearance: none;
+}
+.label-float input:focus {
+  border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -webkit-animation: colorBg 0.1s infinite;
+  animation: colorBg;
+  box-sizing: border-box;
+}
+
+@keyframes colorBg {
+  0% {
+    background-color: white;
+  }
+  100% {
+    color: #282a36;
+  }
+}
+
+.label-float input:required:invalid + label {
+  color: red;
+}
+.label-float input:focus:required:invalid {
+  border: 2px solid red;
+}
+.label-float input:required:invalid + label:before {
+  content: "*";
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  top: 0;
+  color: #3951b2;
 }

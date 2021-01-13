@@ -20,15 +20,28 @@
       <h2><em>Agradecimentos</em> e destinado a Profa. Regina</h2>
       <p>Digite o trecho de DNA ou RNA abaixo, que a transcrição será dada.</p>
       <div class="search">
-        <img src="../theme/search-black-18dp.svg" alt="Search icon" /><input
-          placeholder="Digite aqui o trecho..."
-          type="text"
-          autofocus
-        />
+        <form action="">
+          <img
+            id="searchIcon"
+            src="../theme/search-black-18dp.svg"
+            alt="Search icon"
+          />
+          <div class="label-float">
+            <input minlength="3" required placeholder=" " type="text" />
+            <label>Trecho</label>
+          </div>
+          <button>
+            <img
+              id="calculate"
+              src="../theme/calculate-24px.svg"
+              alt="Calculator's button"
+            />
+          </button>
+        </form>
       </div>
     </main>
     <footer class="Atributions">
-      Coded with 💖 By
+      Feito com 💖 por
       <a href="https://github.com/diogojorgebasso">Diogo Basso</a>.
     </footer>
     <script src="index.js"></script>
