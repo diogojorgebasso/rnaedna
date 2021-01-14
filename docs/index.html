@@ -34,26 +34,33 @@
         </svg>
         Digite o trecho de DNA ou RNA abaixo, que a transcrição será dada.
       </p>
-      <div class="search">
-        <div class="label-float">
-          <input
-            minlength="3"
-            class="input"
-            required
-            placeholder=" "
-            type="text"
-          />
-          <label>Insira o trecho</label>
+      <br />
+      <br />
+      <div id="FinalResponse">
+        <div class="search">
+          <div class="label-float">
+            <input
+              minlength="3"
+              class="input"
+              required
+              placeholder=" "
+              type="text"
+              pattern="\([ACGTU])\gi"
+            />
+            <label>Insira o trecho</label>
+          </div>
         </div>
         <div id="result">
-          <h2 id="showTranslation"></h2>
           <p id="printTypeInput"></p>
+          <h2 id="showTranslation"></h2>
         </div>
       </div>
     </main>
     <footer class="Atributions">
       Feito com 💖 por
-      <a href="https://github.com/diogojorgebasso">Diogo Basso</a>.
+      <a href="https://github.com/diogojorgebasso" target="_blank"
+        >Diogo Basso</a
+      >.
     </footer>
     <script src="index.js"></script>
   </body>

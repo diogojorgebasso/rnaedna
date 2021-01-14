@@ -44,9 +44,24 @@ svg {
   align-items: center;
 }
 
-input {
-  border: none;
-  border-radius: 20px;
+/* ==> Add style animation for input:*/
+
+.label-float {
+  position: sticky;
+  padding-top: 13px;
+  text-align: center;
+  margin: auto;
+}
+.label-float input {
+  border: 1px solid lightgrey;
+  border-radius: 40px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
   cursor: text;
   text-rendering: auto;
   text-indent: 0px;
@@ -58,26 +73,6 @@ input {
   word-spacing: normal;
   text-transform: none;
   -webkit-tap-highlight-color: transparent;
-}
-
-/* ==> Add animation for input:*/
-
-.label-float {
-  z-index: 0;
-  position: absolute;
-  padding-top: 13px;
-}
-.label-float input {
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  outline: none;
-  min-width: 250px;
-  padding: 15px 20px;
-  font-size: 16px;
-  transition: all 0.1s linear;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -webkit-appearance: none;
 }
 .label-float input:focus {
   border: 2px solid #3951b2;
@@ -110,11 +105,11 @@ input {
 }
 
 .label-float input:required:invalid + label {
-  color: red;
+  color: #009425;
 }
 
 .label-float input:focus:required:invalid {
-  border: 2px solid red;
+  border: 2px solid #50fa7b;
 }
 
 .label-float input:required:invalid + label:before {
@@ -131,8 +126,6 @@ input {
 .Atributions {
   bottom: 0;
   position: absolute;
-  display: flex;
-  align-items: center;
 }
 .Atributions a {
   color: white;

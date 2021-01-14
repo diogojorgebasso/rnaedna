@@ -80,12 +80,12 @@ function displayDNA() {
       }
     }
 
-    let showList = lista.reduce((typeTransport, item) => {
-      if (!typeTransport[item]) {
-        typeTransport[item] = 0;
+    let showList = lista.reduce((DifferentPartInDNA, BaseNitrogenada) => {
+      if (!DifferentPartInDNA[BaseNitrogenada]) {
+        DifferentPartInDNA[BaseNitrogenada] = 0;
       }
-      typeTransport[item]++;
-      return typeTransport;
+      DifferentPartInDNA[BaseNitrogenada]++;
+      return DifferentPartInDNA;
     }, {});
 
     final = "";
@@ -93,12 +93,10 @@ function displayDNA() {
       final = final + key + "-";
     }
     translate.innerHTML = final;
-  } else {
-    translate.innerHTML = "Por favor, coloque um múltiplo de 3";
+    input.includes("U")
+      ? (show.innerHTML = "Essa fita é RNA")
+      : (show.innerHTML = "Essa fita é DNA");
   }
-  input.includes("U")
-    ? (show.innerHTML = "Essa fita é RNA")
-    : (show.innerHTML = "Essa fita é DNA");
 }
 
 search.addEventListener("keyup", displayDNA);
