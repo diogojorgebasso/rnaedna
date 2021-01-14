@@ -68,8 +68,6 @@ let cotons = {
   GGG: "gly",
 };
 
-function CreateOutput() {}
-
 function displayDNA() {
   let input = this.value.toUpperCase();
   let lista = [];
@@ -98,11 +96,9 @@ function displayDNA() {
   } else {
     translate.innerHTML = "Por favor, coloque um múltiplo de 3";
   }
-  if (input.includes("U")) {
-    show.innerHTML = "Essa fita é RNA";
-  } else {
-    show.innerHTML = "Essa fita é DNA";
-  }
+  input.includes("U")
+    ? (show.innerHTML = "Essa fita é RNA")
+    : (show.innerHTML = "Essa fita é DNA");
 }
 
 search.addEventListener("keyup", displayDNA);
