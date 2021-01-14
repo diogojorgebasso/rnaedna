@@ -71,7 +71,7 @@ let cotons = {
 function displayDNA() {
   let input = this.value.toUpperCase();
   let lista = [];
-  if (input.length % 3 == 0) {
+  if (input.length % 3 == 0 && input.length != 0) {
     for (let i = 0; i <= input.length / 3; i++) {
       for (const index in cotons) {
         if (index === input.substring(3 * i, 3 * (i + 1))) {

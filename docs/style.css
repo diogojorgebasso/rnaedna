@@ -126,6 +126,7 @@ svg {
 .Atributions {
   bottom: 0;
   position: absolute;
+  right: 0;
 }
 .Atributions a {
   color: white;
