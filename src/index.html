@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <aside>
+    <div id="dnaImage" aria-label="Image decoration of a DNA"></div>
+  </aside>
+  <main>
+    <h1>Tradução de DNA e RNA — Transcrição</h1>
+    <h2><em>Agradecimentos</em> à Profa. Regina</h2>
+    <p>
+      Digite abaixo o trecho de DNA ou RNA. A transcrição será exibida em seguida.
+    </p>
+    <div id="FinalResponse">
+      <div class="search">
+        <div class="label-float">
+          <input minlength="3" class="input" required placeholder=" " type="text" />
+          <label>Insira o trecho</label>
+          <span class="search-icon">
+            <!-- Example with Font Awesome (you can also use inline SVG here) -->
+            <img src="icon.svg" alt="search icon" />
+          </span>
+        </div>
+      </div>
+      <div id="result">
+        <p id="printTypeInput"></p>
+        <h2 id="showTranslation"></h2>
+      </div>
+    </div>
+  </main>
+  <footer class="Atributions">
+    Feito com 💖 por
+    <a href="https://github.com/diogojorgebasso" target="_blank">Diogo Basso</a>.
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

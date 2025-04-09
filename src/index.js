@@ -95,8 +95,8 @@ function displayDNA() {
     }
     translate.innerHTML = final;
     input.includes("U")
-      ? (show.innerHTML = "Essa fita é RNA")
-      : (show.innerHTML = "Essa fita é DNA");
+      ? (show.innerHTML = "🧬 Essa fita é RNA")
+      : (show.innerHTML = "🧬 Essa fita é DNA");
   }
 }
 
